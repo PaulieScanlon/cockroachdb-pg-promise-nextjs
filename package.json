@@ -1,0 +1,32 @@
+{
+  "name": "cockroachdb-pg-promise-nextjs",
+  "version": "1.0.0",
+  "description": "Getting Started With CockroachDB, pg-promise and Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/cockroachdb-pg-promise-nextjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/cockroachdb-pg-promise-nextjs/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/cockroachdb-pg-promise-nextjs#readme",
+  "dependencies": {
+    "fast-geoip": "^1.1.88",
+    "next": "^13.2.1",
+    "pg-promise": "^11.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "request-ip": "^3.3.0"
+  }
+}
