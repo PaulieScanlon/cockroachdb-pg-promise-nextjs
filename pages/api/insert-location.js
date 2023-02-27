@@ -1,9 +1,9 @@
-const { getDB } = require('../../db');
+const { client } = require('../../db');
 const requestIp = require('request-ip');
 const geoip = require('fast-geoip');
 
 export default async function handler(req, res) {
-  const { db } = getDB();
+  const db = client();
   const { date } = JSON.parse(req.body);
 
   try {

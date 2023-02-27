@@ -68,7 +68,7 @@ const Page = ({ data, error }) => {
       {data.locations.map((l, i) => {
         const { id, date, city, lat, lng, runtime } = l;
         return (
-          <dl key={i}>
+          <dl key={i} style={{ marginBottom: 64 }}>
             <dt>Id</dt>
             <dd>
               <span>{id}</span> <button onClick={() => handleDelete(id)}>delete</button>
@@ -91,8 +91,8 @@ const Page = ({ data, error }) => {
 };
 
 export const getServerSideProps = async () => {
-  const { getDB } = require('../db');
-  const { db } = getDB();
+  const { client } = require('../db');
+  const db = client();
 
   try {
     const response = await db.any('SELECT * from locations');

@@ -1,7 +1,7 @@
-const { getDB } = require('../../db');
+const { client } = require('../../db');
 
 export default async function handler(req, res) {
-  const { db } = getDB();
+  const db = client();
   const { id } = JSON.parse(req.body);
 
   try {

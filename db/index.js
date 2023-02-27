@@ -13,11 +13,4 @@ const createSingleton = (name, create) => {
   return scope;
 };
 
-export const getDB = () => {
-  return createSingleton('my-app-db-space', () => {
-    return {
-      db: pgp(process.env.DATABASE_URL),
-      pgp,
-    };
-  });
-};
+export const client = () => createSingleton('my-app-db-space', () => pgp(process.env.DATABASE_URL));
