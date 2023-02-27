@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://paulie.dev/posts/2023/02/getting-started-with-cockroachdb-pg-promise-and-nextjs/">
-    <img alt="Custom Marketo Forms With React" src="https://res.cloudinary.com/www-paulie-dev/image/upload/v1677258978/paulie.dev/2023/02/open-graph-image_xuxbnp.jpg" />
+    <img alt="Getting Started With CockroachDB, pg-promise and Next.js" src="https://res.cloudinary.com/www-paulie-dev/image/upload/v1677502114/paulie.dev/2023/02/open-graph-image_qkecxd.jpg" />
   </a>
 </p>
 
