@@ -74,7 +74,7 @@ const Page = ({ data, error }) => {
               <span>{id}</span> <button onClick={() => handleDelete(id)}>delete</button>
             </dd>
             <dt>Date</dt>
-            <dd>{date}</dd>
+            <dd>{new Date(date).toDateString()}</dd>
             <dt>City</dt>
             <dd>{city}</dd>
             <dt>Latitude</dt>
@@ -104,7 +104,7 @@ export const getServerSideProps = async () => {
             const { id, date, city, lat, lng, runtime } = res;
             return {
               id,
-              date: String(new Date(date * 1000)),
+              date: JSON.parse(JSON.stringify(date)),
               city,
               lat,
               lng,
